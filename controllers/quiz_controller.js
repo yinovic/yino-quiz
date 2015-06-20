@@ -17,6 +17,7 @@ exports.load = function(req, res, next, quizId){
 /* GET /quizes/question */
 exports.index = function(req, res  ) {
   var search = req.query.search;
+  
   if ((typeof(search) === "undefined") ){
     search = "%";
   }else{
